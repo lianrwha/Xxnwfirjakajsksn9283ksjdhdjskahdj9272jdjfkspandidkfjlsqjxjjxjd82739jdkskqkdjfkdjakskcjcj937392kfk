@@ -1,0 +1,38 @@
+var objc = JSON.parse($response.body);
+
+objc = {
+    "result": {
+        "result": "success",
+        "msTime": 9999999999999,
+        "accountCreatedMillis":1,
+        "licenses": [
+            {
+                "productId": "alightcreative.motion",
+                "label": null,
+                "benefits": [
+                    "RemoveWatermark",
+                    "MemberEffects",
+                    "ProjectPackageSharing",
+                    "FutureMemberFeatures",
+                    "AdvancedEasing",
+                    "CameraObjects",
+                    "LayerParenting",
+                    "CloudStorageLowTier",
+                    "PremiumFeatures"
+                ],
+                "period": "100000000y",
+                "valid": true,
+                "expires": 27988447799999000,
+                "details": null,
+                "type": "subscription",
+                "autoRenewing": true,
+                "orderNumber": "💡您已解锁永久会员，现在请把🚀的连接关闭，可以正常使用AM，平时使用直接打开AM即可！\n⚠️会员来自闲鱼链接 m.tb.cn/h.TyxU7SE?tk=1Tpoeo5oWX0 请截图使用提取文字对链接进行验证，非此链接购买的都是盗卖⚠️请及时退款⚠️如盗卖或使用盗卖可随时取消会员使用且不进行售后和退款！",
+                "linkStatus": "linked-current",
+                "store": "apple_app_store"
+            }
+        ],
+        "warnings": []
+    }
+};
+
+$done({ body: JSON.stringify(objc) });
